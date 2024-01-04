@@ -1,9 +1,9 @@
-package org.datastructure;
+package com.datastructure;
 
 /**
- * 출처 : [YouTube] 엔지니어 대한민국 - [자료구조 알고리즘] LinkedListNode의 구현 in Java
+ * 출처 : [YouTube] 엔지니어 대한민국 - [자료구조 알고리즘] Linked List 중복값 삭제 in Java
  */
-class LinkedList {
+class LinkedList2 {
     Node header;
 
     static class Node {
@@ -11,7 +11,7 @@ class LinkedList {
         Node next = null;
     }
 
-    LinkedList() {
+    LinkedList2() {
         header = new Node();
     }
 
@@ -45,17 +45,36 @@ class LinkedList {
         }
         System.out.println(n.data);
     }
+
+    void removeDups() {
+        Node n = header;
+        while(n != null && n.next != null) {
+            Node r = n;
+            while(r.next != null) {
+                if(n.data == r.next.data) {
+                    r.next = r.next.next;
+                } else {
+                    r = r.next;
+                }
+            }
+            n = n.next;
+        }
+    }
 }
 
-public class LinkedListNode {
+public class RemoveDups {
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList();
+        LinkedList2 ll = new LinkedList2();
+        ll.append(2);
         ll.append(1);
         ll.append(2);
         ll.append(3);
         ll.append(4);
+        ll.append(3);
+        ll.append(2);
+        ll.append(2);
         ll.retrieve();
-        ll.delete(1);
+        ll.removeDups();
         ll.retrieve();
     }
 }

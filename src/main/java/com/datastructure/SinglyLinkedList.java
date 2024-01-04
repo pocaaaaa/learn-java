@@ -1,4 +1,4 @@
-package org.datastructure;
+package com.datastructure;
 
 /**
  * 출처 : [YouTube] 엔지니어 대한민국 - [자료구조 알고리즘] 단방향 Linked List 구현 in Java 실습
