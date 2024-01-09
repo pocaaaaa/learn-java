@@ -175,6 +175,7 @@ public class LinkedListNodeAlg3 {
         //l1.append(9);
         //l1.append(1);
         //l1.append(4);
+        l1.append(9);
         l1.append(1);
         l1.retrieve();
 
@@ -182,8 +183,8 @@ public class LinkedListNodeAlg3 {
         //l2.append(6);
         //l2.append(4);
         //l2.append(3);
-        l2.append(9);
-        l2.append(9);
+        l2.append(1);
+        l2.append(1);
         l2.retrieve();
 
         //LinkedList8.Node n = l2.sumLists(l1.get(1), l2.get(1), 0);
