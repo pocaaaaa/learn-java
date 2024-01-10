@@ -43,6 +43,17 @@ class Node {
         }
         System.out.println(n.data);
     }
+
+    public Node addNext(int i) {
+        Node n = new Node(i);
+        this.next = n;
+        return n;
+    }
+
+    public Node addNext(Node n) {
+        this.next = n;
+        return n;
+    }
 }
 
 public class SinglyLinkedList {
