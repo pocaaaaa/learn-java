@@ -2,7 +2,7 @@ package com.datastructure;
 
 import com.datastructure.common.Queue;
 
-public class QueueAlg {
+public class QueueAlg1 {
     public static void main(String[] args) {
         Queue<Integer> q = new Queue<Integer>();
         q.add(1);

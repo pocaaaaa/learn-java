@@ -2,7 +2,7 @@ package com.datastructure;
 
 import com.datastructure.common.Stack;
 
-public class StackAlg {
+public class StackAlg1 {
     public static void main(String[] args) {
         Stack<Integer> s = new Stack<Integer>();
         s.push(1);
